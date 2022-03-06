@@ -6,7 +6,7 @@
 /*   By: bbordere <bbordere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 17:07:55 by bbordere          #+#    #+#             */
-/*   Updated: 2021/11/24 10:28:20 by bbordere         ###   ########.fr       */
+/*   Updated: 2022/03/06 11:16:37 by bbordere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,5 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	while (*s)
-	{
-		write(fd, s, 1);
-		s++;
-	}
+	write(fd, s, ft_strlen(s));
 }

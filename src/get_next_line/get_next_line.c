@@ -48,8 +48,7 @@ char	*get_memory(int fd, int *bytes, char *memory)
 		if (*bytes < 0)
 		{
 			free(tmp);
-			if (memory)
-				free(memory);
+			free(memory);
 			return (NULL);
 		}
 		if (!*bytes && !*tmp)
@@ -109,7 +108,7 @@ char	*get_next_line(int fd)
 	if (mem_empty(memory))
 	{
 		free(memory);
-		memory = 0;
+		memory = NULL;
 	}
 	return (line);
 }
