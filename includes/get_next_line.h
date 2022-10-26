@@ -19,7 +19,7 @@
 # define BUFFER_SIZE 1
 
 char	*ft_strchr(const char *str, int c);
-char	*ft_strjoin(char *s1, char *s2);
+char	*ft_strjoin1(char *s1, char *s2);
 char	*get_next_line(int fd);
 char	*ft_buff_to_memory(int fd, char *memory);
 char	*ft_get_line(char *str);

@@ -54,7 +54,7 @@ char	*get_memory(int fd, int *bytes, char *memory)
 		if (!*bytes && !*tmp)
 			break ;
 		tmp[*bytes] = '\0';
-		memory = ft_strjoin(memory, tmp);
+		memory = ft_strjoin1(memory, tmp);
 	}
 	free(tmp);
 	return (memory);
